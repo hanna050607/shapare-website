@@ -1,0 +1,510 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffe3ed;
+  }
+  
+  header {
+    background-color: #f8d8e8;
+    padding: 10px 0;
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .search-bar {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: #666;
+  }
+  
+  .auth-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+  }
+  .navbar {
+    background-color: #f8d8e8;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+  }
+  
+  .intro {
+    display: flex;
+    margin: 20px;
+  }
+
+  .text-box {
+    flex: 1;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #666;
+    font-weight: bold;
+  }
+  
+  p {
+    color: #666;
+    line-height: 1.5;
+  }
+/* 네비게이션 바 스타일 */
+nav {
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    background-color: #ffd8e5; /* 네비게이션 배경색 */
+    padding: 10px 0; /* 위아래 여백 */
+    box-shadow: 0 2px 5px rgba(111, 111, 111, 0.1); /* 그림자 효과 */
+  }
+  
+  nav a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: rgb(142, 142, 142); /* 기본 글자 색상 */
+    font-weight: bold; /* 굵은 글자 */
+    margin: 0 15px; /* 링크 간 간격 */
+    padding: 5px 10px; /* 텍스트 주위 여백 */
+    border-radius: 20px; /* 둥근 테두리 */
+    transition: background-color 0.3s ease, color 0.3s ease; /* 부드러운 효과 */
+  }
+  
+  nav a:hover {
+    background-color: white; /* 배경색 변경 */
+    color: #ffeef9; /* 텍스트 색 변경 */
+  }
+  
+  /* 상단 검색 바 및 로고, 로그인 스타일 */
+  .top-bar {
+    display: flex;
+    justify-content: space-between; /* 요소들을 양쪽으로 정렬 */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffe4ed;
+    box-shadow: 0 2px 5px rgba(128, 128, 128, 0.1);
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #6f6f6f;
+  }
+  
+
+  
+  .auth-links a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .auth-links a:hover {
+    background-color: white;
+    color: #fec7e5;
+  }
+
+  .search-bar {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+  }
+    
+  /* 고정 헤더 스타일 */
+header {
+    position: fixed; /* 헤더 고정 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 화면 전체 너비 */
+    z-index: 1000; /* 다른 요소들보다 위에 오도록 설정 */
+    background-color: #ffe4ed; /* 헤더 배경색 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  }
+
+  /* 헤더 아래에 콘텐츠가 가려지지 않도록 메인 콘텐츠 상단 여백 추가 */
+  main {
+    margin-top: 120px; /* 헤더 높이만큼 여백 추가 */
+  }
+  
+  /* 상단 바 스타일 (검색창, 로고, 로그인/회원가입 링크) */
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  /* 네비게이션 바 스타일 */
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: white;
+    color: #ffb6d8;
+  }
+ footer {background-color:#ffd8e5;}
+
+ .logo a {
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: #757575; /* 텍스트 색상 */
+    font-size: 2.5rem; /* 크기 조정 */
+    font-weight: bold; /* 굵게 */
+  }
+  
+  .logo a:hover {
+    color: #ff69b4; /* 호버 시 색상 변경 (예: 핑크) */
+  }
+
+
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .share-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .posts {
+    width: 70%;
+  }
+  
+  .post {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .content {
+    margin: 10px 0;
+  }
+  
+  .icons span {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .my-page {
+    width: 25%;
+    height: 20%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .my-page img {
+    width: 50px;
+  }
+  
+  .my-page button {
+    margin: 10px 5px;
+    padding: 8px;
+    border: none;
+    background-color: #f8bbd0;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .post {
+    display: flex;
+    justify-content: space-between; /* 텍스트와 이미지를 양 끝으로 */
+    align-items: center; /* 세로 정렬 */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: white;
+  }
+  
+  .post img {
+    width: 30%; /* 박스 너비의 1/3 차지 */
+    height: auto;
+    margin-left: 10px; /* 텍스트와 간격 */
+    border-radius: 0; /* 둥글지 않게 */
+  }
+
+  /* 수정 */
+  .post {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .profile {
+    width: 20%;
+  }
+  
+  .profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .name {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .text-content {
+    width: 50%;
+    padding-left: 20px;
+  }
+  
+  .photo {
+    width: 30%;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .interaction {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .heart, .comment {
+    margin-right: 10px;
+  }
+
+  
+  /*수정의 수정*/
+  .post {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .profile {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 150%;
+    height: auto;  /* 1.5배 크기 */
+    border-radius: 50%;
+    margin-bottom: 10px;  /* 이름과 간격을 위해 약간의 여백 추가 */
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .text-content {
+    width: 50%;
+    padding-left: 20px;
+  }
+  
+  .photo {
+    width: 30%;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .interaction {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;  /* 화면에 고정 */
+    bottom: 10px;  /* 하단 여백 */
+    left: 10px;  /* 왼쪽 여백 */
+  }
+
+/* .post 클래스 - 부모 요소에 상대적인 위치 설정 */
+.post {
+    position: relative;
+  }
+  
+  /* .icons 클래스 - 하트와 말풍선의 위치 설정 */
+  .icons {
+    position: absolute; /* 자식 요소를 부모 요소에 대해 절대 위치 설정 */
+    bottom: 10px;       /* 하단 10px 간격 */
+    left: 10px;         /* 왼쪽 10px 간격 */
+    display: flex;      /* 아이템을 수평으로 배치 */
+    align-items: center;/* 수직 중앙 정렬 */
+  }
+  
+  
+  .heart, .comment {
+    margin-right: 10px;
+  }
+  
+
+/* 기본적으로 checkbox를 숨깁니다. */
+.hidden {
+    display: none;
+  }
+  
+  /* 링크 스타일링 */
+  .nav-link {
+    margin-right: 20px;
+    cursor: pointer;
+    color: #FF7F7F;
+    font-weight: bold;
+  }
+  
+  /* section의 기본 상태는 숨김 */
+  .section {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  /* 체크박스를 체크했을 때 해당 섹션이 보이도록 */
+  #daily-checkbox:checked ~ #daily-section,
+  #share-checkbox:checked ~ #share-section {
+    display: block;
+  }
+  
+  /* 텍스트 영역과 버튼 스타일 */
+  textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ff8db9;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff67a1;
+  }
+  
+  .top-button {
+    position: fixed;
+    bottom: 20px; /* 페이지 하단에서 20px */
+    right: 20px;  /* 페이지 오른쪽에서 20px */
+    background-color: #ffc1d7;
+    color: white; /* 글자색 */
+    padding: 10px 15px; /* 버튼 크기 조정 */
+    border-radius: 50px; /* 둥근 모양 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    font-size: 14px; /* 글자 크기 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 버튼 그림자 */
+    transition: background-color 0.3s ease; /* 호버 애니메이션 */
+    
+    .top-button a {
+      color: white; /* 글자 색상 흰색으로 */
+      text-decoration: none; /* 밑줄 제거 */
+  }
+  
+  .top-button a:hover {
+      color: #f8f9fa; /* 호버 시 글자 색상 변경 (살짝 더 밝게) */
+  }
+  
+}
+
+.top-button:hover {
+    background-color: #ffdaee; /* 호버 시 밝은 색상 */
+    cursor: pointer; /* 포인터 모양 변경 */
+}
+
+  
+  #topBtn:hover {
+    background-color: hsl(338, 100%, 89%); /* 더 진한 핑크 */
+  }
+  
+  body:target #topBtn {
+    display: block; /* 스크롤 내려가면 보임 */
+  }
+  
+  .top-button a {
+    color: white !important; /* 글자 색상 강제 흰색 */
+    text-decoration: none !important; /* 밑줄 강제 제거 */
+}
+
+.top-button a:hover {
+    color: #f8f9fa !important; /* 호버 시 색상 변경 강제 */
+}
+
+
+  
+    
